@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 73px;
+    background-color: $blackColor;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $pastelColor;
+            line-height: 3.5;
+            width: 100px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: RobotoBlack;
+            font-family: Pattaya;
+            /*             -webkit-text-stroke: 0.5px;
+            -webkit-text-stroke-color: #fff; */
+
+            &:hover {
+                color: $blackColor;
+                background-color: $pastelColor;
+                box-shadow: 0px 0px 15px 5px $purpleColor;
+                transform: scale(1.7);
+                transition: 500ms;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    #sidebarMenu {
+        width: 100vw;
+
+        ul {
+            width: 88vw;
+            display: flex;
+
+        }
+
+        li a {
+
+            width: 20vw;
+            font-size: 1.2rem;
+            ;
+        }
+    }
+}
+
+//Responsive Nav Bar For Mobile

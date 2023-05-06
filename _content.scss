@@ -1,0 +1,1022 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    width: 100vw;
+    background-color: #000;
+    font-family: RobotoBlack;
+    overflow-x: hidden;
+}
+
+h2 {
+    color: $pastelColor;
+    font-family: HennyPenny;
+    font-size: 2rem;
+    text-align: center;
+}
+
+//HOME PAAGE----HOME PAAGE----HOME PAAGE----HOME PAAGE----
+/* CAROUSEL (FIRST SECTION) */
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+    height: 100vh;
+}
+
+#home_main_title {
+    opacity: 80%;
+    width: 100vw;
+    position: absolute;
+    color: $pastelColor;
+    z-index: 1;
+    top: 10%;
+
+    h1 {
+        box-shadow: 0px 0px 15px 15px $purpleColor;
+        width: 100vw;
+        text-align: center;
+        font-size: 4rem;
+        font-family: Pattaya;
+        border: 10px solid #000;
+        background-color: #000;
+    }
+}
+
+.carousel-item .train {
+    width: 100vw;
+    height: 125vh;
+    place-items: initial;
+}
+
+.carousel-item .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+
+}
+
+//BOOTSTRAO CARDS
+.bootstrapCard {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 18rem 18rem;
+    gap: 20px;
+}
+
+.bootstrapCard .card img {
+    height: 150px;
+}
+
+.bootstrapCard .btn-primary {
+    width: 100px;
+    margin-top: 50px;
+}
+
+.bootstrapCard .card:hover {
+    box-shadow: 10px 10px 10px 10px $purpleColor;
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+/* DEFOULT GRID (SECOND SECTION) */
+.index_container .col {
+    color: white;
+    display: grid;
+    margin-bottom: 100px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.index_container .row {
+    width: 80vw;
+}
+
+.index_container .row .col h3 {
+    text-decoration: underline;
+    border-bottom-color: white;
+    font-family: HennyPenny;
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+
+
+
+.index_container .row .col p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.index_container img {
+    width: 650px;
+    height: 470px;
+    margin-top: 180px;
+    border: 3px solid #fff;
+}
+
+
+
+.h2S {
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-family: HennyPenny;
+}
+
+//third section (Sponsors)
+.sponsorsGrid {
+    margin: 50px auto;
+    display: grid;
+    background-color: $blackColor;
+    padding-top: 30px;
+    width: 80vw;
+    grid-template-columns: repeat(4, );
+    grid-template-rows: 150px 150px;
+    gap: 60px;
+
+    grid-template-areas:
+        "sponsor1 sponsor2 sponsor3 sponsor4"
+        "sponsor5 sponsor6 sponsor7 sponsor8";
+
+
+}
+
+.thirdSection {
+    width: 100vw;
+    height: 95vh;
+    background-color: $blackColor;
+}
+
+.thirdSection img {
+    width: 260px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.thirdSection img:hover {
+    box-shadow: 0px 0px 30px 20px $purpleColor;
+    transform: scale(1.1);
+    transition: 300ms;
+    border-radius: 25px;
+}
+
+
+
+.btn,
+.btn img {
+    background-color: $pastelColor;
+    border: 3px solid $blackColor;
+    display: block;
+    margin: 0 auto;
+    line-height: 2.5;
+    float: right;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    z-index: 101;
+}
+
+.btn img:hover {
+    transform: scale(0.9);
+    transition: 500ms;
+}
+
+
+//HOME PAGE RESPONSIVE FOR MOBILE
+@media only screen and (max-width: 420px) {
+
+    //FIRST SECTION ****RESPONSIVE MOBILE****
+    .carousel-inner {
+        height: 50vh;
+        margin: 0 auto;
+
+        #home_main_title {
+            width: 100vw;
+            position: absolute;
+            color: $pastelColor;
+            z-index: 1;
+            top: 15.5%;
+            text-align: center;
+
+            h1 {
+                width: 110vw;
+                margin-left: -25px;
+                font-size: 2rem;
+                font-family: Pattaya;
+                background-color: #000;
+                box-shadow: 0px 0px 15px 15px $purpleColor;
+            }
+        }
+
+        img {
+
+            width: 80vw;
+        }
+
+        .carousel-item img {
+            height: 50vh;
+            object-fit: cover;
+
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 50vh;
+    }
+
+
+
+
+
+
+    //SECOND SECTION (FESTIVAL INFO)  ****RESPONSIVE MOBILE****
+    .secondSection {
+        margin-top: -40px;
+
+    }
+
+    .index_container img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        object-position: left;
+        margin-top: 200px;
+
+    }
+
+    //THIRD SECTION (SPONSORS GRID) ****RESPONSIVE MOBILE****
+    .thirdSection {
+        margin: 0 auto;
+        height: 230vh;
+        background-color: #000;
+    }
+
+    .sponsorsGrid {
+        display: inline-block;
+        height: 100vh;
+
+        gap: 100px;
+
+    }
+
+    .sponsorsGrid {
+        margin-top: 20px;
+        width: 100vw;
+        height: 190vh;
+        background-color: black;
+        display: block;
+
+        div {
+
+            height: 20vh;
+            margin-top: 50px;
+        }
+
+        a {
+            margin-bottom: 50px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    //FOOTER  ****RESPONSIVE MOBILE****
+}
+
+//ABOUT PAGE------ABOUT PAGE------ABOUT PAGE------
+//ABOUT FIRST SECTION
+.about_main .about_first_section {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+
+    //ABOUT TITLE
+    .about_main_title h1 {
+        position: absolute;
+        text-align: center;
+        color: $whiteColor;
+        top: 75%;
+        color: $pastelColor;
+        font-family: Pattaya;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        padding: 20px;
+        border: 5px solid $pastelColor;
+        box-shadow: 0px 0px 30px 30px black;
+        background-color: black;
+        border-radius: 30px;
+    }
+
+    //ABOUT BIG IMAGE BEHAIND THE TITLE
+    .about_main_image {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+//ABOUT SECOND SECTION
+.about_second_section {
+    display: grid;
+    height: 150vh;
+
+    .about_mardi_gras_history {
+        width: 60vw;
+        color: #fff;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+
+    .about_background_images {
+        .background_twoMasks {
+            position: sticky;
+            z-index: -2;
+            width: 350px;
+            height: 250px;
+            margin-top: -100vw;
+            margin-left: -50px;
+        }
+
+        .background_twoMasks_right {
+            position: sticky;
+            z-index: 1;
+            width: 350px;
+            height: 250px;
+            float: right;
+            margin-top: -500px;
+            margin-right: -50px;
+        }
+
+    }
+
+    #under_line_between_two_p {
+        border: 2px dashed #fff;
+        margin: 20px;
+    }
+}
+
+//ABOUT THIRD SECTION (ABOUT MAYOR)
+.about_mayor_section {
+    margin: 0 auto;
+    width: 60vw;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+
+    h3 {
+        font-family: HennyPenny;
+        color: $pastelColor;
+    }
+
+    .orleans_image {
+
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 20px;
+        margin-left: 38px;
+        margin-right: 38px;
+        border: 3px solid $pastelColor;
+    }
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    .about_second_section {
+        display: grid;
+        height: 298vh;
+
+        .about_mardi_gras_history {
+            width: 80vw;
+            color: #fff;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .about_background_images {
+            display: none;
+        }
+    }
+
+    //ABOUT THIRD SECTION (ABOUT MAYOR)
+    .about_mayor_section {
+        margin: 0 auto;
+        width: 80vw;
+        color: #fff;
+        height: 210vh;
+        text-align: center;
+
+        .orleans_image {
+
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            margin-left: 38px;
+            margin-right: 38px;
+            border: 3px solid $pastelColor;
+        }
+    }
+
+    footer {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 395px) {
+
+
+    .about_mayor_section {
+        margin-top: 430px;
+        height: 230vh;
+    }
+}
+
+//MEDIA PAGE------MEDIA PAGE------MEDIA PAGE------MEDIA PAGE------MEDIA PAGE------
+* {
+    box-sizing: border-box;
+}
+
+.gallery_section {
+    margin: 0 auto;
+    width: 100vw;
+    height: 80vh;
+}
+
+.row {
+    margin: 0 auto;
+    width: 85vw;
+}
+
+.row>.column {
+    margin-bottom: 20px;
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.column img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 15px 15px $purpleColor;
+    transform: scale(0.9);
+    transition: 500ms;
+    border-radius: 25px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+    object-fit: cover;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+//MEDIA IMAGES FOR RESPONSIVE MOBILE 
+@media only screen and (max-width: 420px) {
+    .gallery_section {
+        display: block;
+        width: 100vw;
+        height: 190vh;
+
+        .row {
+            width: 80vw;
+
+            .column {
+                width: 100vw;
+
+            }
+        }
+    }
+
+    .modal .modal-content {
+        width: 80vw;
+        height: 30vh;
+
+        img {
+            width: 100vw;
+            height: 30vh;
+            object-fit: cover;
+        }
+
+        .column img {
+            height: 20vh;
+        }
+    }
+
+    .container-fluid {
+        width: 100vw;
+        height: 140vh;
+    }
+
+}
+
+//MEDIA VIDEO SECTION--------MEDIA VIDEO SECTION--------MEDIA VIDEO SECTION--------MEDIA VIDEO SECTION--------
+//MEDIA VIDEO FOR RESPONSIVE MOBILE 
+@media only screen and (max-width: 420px) {
+    .container-fluid {
+        height: 155vh;
+    }
+}
+
+
+
+//CONTACT US PAGE
+.contactUs_columns {
+    display: grid;
+    grid-auto-columns: 1fr;
+    height: 100vh;
+}
+
+#sad_happyMasks {
+    z-index: 99;
+    display: block;
+    width: 400px;
+}
+
+.contactUs_left {
+    background-color: black;
+    opacity: 0.9;
+    border: 20px solid black;
+    grid-column: 1;
+    margin-top: 50px;
+
+
+
+    .contactUsH2_left {
+        font-size: 3.4rem;
+    }
+
+    .contactUs_Ul {
+        z-index: 101;
+        background-color: rgb(0, 0, 0);
+        margin: 0 auto;
+        border: 10px solid #000;
+    }
+
+    .contactUs_Ul li {
+        color: white;
+        padding-top: 20px;
+        font-size: 1.4rem;
+        z-index: 101;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+
+
+    }
+}
+
+
+
+.contactUs_center {
+    grid-column: 2;
+    background-color: black;
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.contactUs_right {
+    grid-column: 3;
+    opacity: 0.9;
+    border: 20px solid black;
+    background-color: black;
+
+    .contactUsH2_right {
+        font-size: 3.3rem;
+        padding-top: 60px;
+        color: $pastelColor;
+    }
+
+    img {
+        margin-top: 20px;
+        box-shadow: 0px 0px 50px 15px $pastelColor;
+    }
+
+    img:hover {
+        transform: scale(0.9);
+        transition: 500ms;
+    }
+}
+
+
+
+.contactUsH2 {
+    padding-top: 80px;
+}
+
+.formForUser form {
+    text-align: center;
+    color: white;
+    font-family: RobotoBold;
+}
+
+#contact_us_button {
+    width: 80px;
+    height: 50px;
+    background-color: $pastelColor;
+    color: $blackColor;
+    border-radius: 10px;
+    border: 2px solid $blackColor;
+
+}
+
+#contact_us_button:hover {
+    width: 80px;
+    height: 50px;
+    background-color: $pastelColor;
+    color: $whiteColor;
+    border-radius: 10px;
+    border: 5px solid $whiteColor;
+    transform: scale(1.2);
+    transition: 500ms;
+}
+
+#name,
+#last_name,
+#email {
+    text-align: center;
+    border: 5px solid $pastelColor;
+    border-radius: 10px;
+}
+
+#contact_us_text {
+    color: black;
+    border: 5px solid $pastelColor;
+    border-radius: 20px;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    resize: none;
+}
+
+.mardiMap {
+    border: 10px solid #000;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 450px;
+    height: 450px;
+}
+
+//CONTACT US RESPONSIVE FOR MOBILE
+@media only screen and (max-width: 420px) {
+
+    //CONTACT US FIRST SECTION (PHONE NUMBERS)
+    .contactUs_columns {
+        display: inline-block;
+        width: 100vw;
+        height: 290vh;
+
+        #sad_happyMasks {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        .contactUs_Ul {
+
+            width: 90vw;
+            height: 90vh;
+
+            li {
+                margin: 0 auto;
+                font-size: 2rem;
+            }
+        }
+
+        //CONTACT US SECOND SECTION (Input's Section)
+        .contactUs_center {
+
+            font-size: 1.7rem;
+
+            .contactUsH2 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    //CONTACT US THIRD SECTION (Map)
+    .contactUs_right {
+        height: 70vh;
+
+        .contactUsH2_right {
+            font-size: 5rem;
+        }
+
+        .mardiMap {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            object-fit: cover;
+
+        }
+    }
+
+    footer {
+        z-index: 100;
+    }
+}
+
+//FAQ PAGE-------FAQ PAGE-------FAQ PAGE-------FAQ PAGE-------FAQ PAGE-------FAQ PAGE-------FAQ PAGE-------
+
+.faq_title {
+    padding-top: 100px;
+}
+
+.faq_accordion {
+    display: grid;
+    background-color: #fff;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 60%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: $blackColor;
+
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: $pastelColor;
+    color: #000;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: $blackColor;
+    opacity: 0.95;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+}
+
+//FOOTER
+footer {
+    width: 100vw;
+    height: 25vh;
+    background-color: #000;
+    color: $whiteColor;
+}
+
+.footContainer {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+
+    .twitterImg {
+        width: 45px;
+        height: 45px;
+        margin-top: -2px;
+    }
+}
+
+.footContainer img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(24%) hue-rotate(114deg) brightness(108%) contrast(108%);
+}
+
+.footContainer img:hover {
+    transform: scale(0.8);
+    transition: 500ms;
+    filter: invert(82%) sepia(37%) saturate(2052%) hue-rotate(228deg) brightness(94%) contrast(95%);
+}
+
+.creator,
+.creator1 {
+    display: block;
+    color: $whiteColor;
+    font-family: RobotoBlack;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.creator1 {
+    padding-bottom: 25px;
+}
+
+/* .container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 860px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 30px;
+    grid-template-areas:
+        "box1 box1 box2 box2"
+        "box3 box3 box4 box4";
+}
+
+.item {
+    display: block;
+    background-color: $purpleColor;
+    padding: 20px;
+    align-items: center;
+    background-position: center;
+    box-shadow: -0px 0px 30px 1px $purpleColor;
+    transition: 500ms;
+}
+
+.item:hover {
+    background-color: $yellowColor;
+    border: 4px solid #000;
+    box-shadow: 0px 10px 50px 5px $yellowColor;
+    transform: scale(0.95);
+    transition: 500ms;
+}
+
+.box1 {
+    grid-area: box1;
+    background-image: url(../VS_MardiGras_Project/Images/blueGuy.jpg);
+    background-size: 425px 282px;
+
+}
+
+.box2 {
+    grid-area: box2;
+    background-image: url(../VS_MardiGras_Project/Images/fewMasks.jpg);
+    background-size: 533px 300px;
+
+}
+
+.box3 {
+    grid-area: box3;
+    background-image: url(../VS_MardiGras_Project/Images/girlMasks.jpg);
+    background-size: 562px 320px;
+}
+
+.box4 {
+    grid-area: box4;
+    background-image: url(../VS_MardiGras_Project/Images/twoMasks.jpg);
+    background-size: 400px 300px;
+}
+
+.middleContent {}
+
+.middleContent p {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+    font-family: arial;
+    font-size: 1.5rem;
+    line-height: 3vw;
+    color: $blackColor;
+    font-weight: bold;
+    text-align: center;
+
+} */
